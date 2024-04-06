@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/individual.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="flex-card-header">
+        <h1>
+            <i class="bi bi-chevron-left back-button"></i>
+        </h1>
+        <h2>
+            <i class="bi bi-heart" id="heartIcon" style="color: #ff661a; cursor: pointer;"></i>
+        </h2>
+        <div class="flex-cardsubheader">
+            <h3>
+                Masala Curry
+            </h3>
+            <h3>
+                $25.00
+            </h3>
+            <div class="flex-card-img">
+                <img src="img/pasta.png" alt="pasta" class="img-food">
+            </div>
+            <div class="flex-text-content">
+                <h3>Details</h3>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum minima pariatur ipsa eius reprehenderit tempora amet quibusdam, nam aperiam quidem aliquam commodi odio!</span>
+            </div>
+            <div class="quantity-flex-content">
+                <h4>Quantity</h4>
+                <h3>
+                    <i class="bi bi-plus-circle addCircle" id="plusCircle"></i> 
+                        &nbsp<span id="counter"> 2 </span>  &nbsp 
+                    <i class="bi bi-dash-circle minusCircle" id="minusCircle"></i>  
+                </h3>
+            </div>
+        </div>
+            <div class="button-content">
+                <button class="btn-add-cart">Add to Cart</button>
+                <button class="btn-check-out">Check out</button> 
+            </div>
+    </div>
+    <script src="scripts/individual.js"></script>
+</body>
+</html>
