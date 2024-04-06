@@ -1,0 +1,205 @@
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+.card-top{
+    height: 25vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.page-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 12.5vh ;
+    width: 100%;
+    color: white;
+}
+.icons-space{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 12.5vh ;
+    width: 100%;
+    color: white;
+}
+.icons-space i{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.icons-space i:hover{
+color: black;
+}
+.card-bg{
+    background-color: aliceblue;
+    height: 75vh;
+    width: 95vw;
+    border-radius: 10px;
+    box-shadow:  0px 0px 15px 10px rgba(222, 227, 232, 0.5);
+    overflow: auto;
+}
+.page-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: orange;
+    height: 100vh;
+    overflow: auto;
+}
+.food-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.food-container-selected{
+    background-color: #d3d9de;
+    cursor: pointer;
+}
+.food-img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.food-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.food-info > span{
+    align-self: baseline;
+}
+.food-info span:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+}
+.food-info span:nth-child(2){
+    font-size: 14px;
+    color: #363636;
+}
+.food-info span:nth-child(3){
+    font-size: 14px;
+    color: #595a5a;
+}
+.img-cart{
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* SCROLLBARS */
+/* Works on Firefox 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+*/
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(76, 76, 77);
+  border-radius: 20px;
+  border: 3px solid rgb(90, 90, 90);
+}
+
+/* MODALS */
+/* Fondo modal: negro con opacidad al 50% */
+.modal {
+  display: none; /* Por defecto, estará oculto */
+  position: fixed; /* Posición fija */
+  z-index: 1; /* Se situará por encima de otros elementos de la página*/
+  padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Algura completa */
+  overflow: auto; /* Se activará el scroll si es necesario */
+  background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+}
+.modal-content {
+    position: relative; /* Relativo con respecto al contenedor -modal- */
+    background-color: white;
+    margin: auto; /* Centrada */
+    padding: 20px;
+    width: 60%;
+    -webkit-animation-name: animarsuperior;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s
+  }
+  /* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animarsuperior {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  .close {
+    color: black;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-buttons-space button {
+    background-color: #ff661a;
+    height: 45px;
+    width: 120px;
+    margin: 10px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .modal-buttons-space > button:hover {
+    background-color: #303030;
+  }
+  .modal-buttons-space{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+  }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/cart.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page-content">
+        <div class="card-top">
+            <div class="page-info">
+                <h3>Page Title</h3>
+                <h3>Page Title</h3>
+            </div>
+            <div class="icons-space">
+                <div class="left-space">
+                    <i class="bi bi-chevron-left"></i>
+                    <i class="bi bi-house"></i>
+                </div>
+                <div class="right-space">
+                    <i class="bi bi-cart"></i>
+                    <i class="bi bi-credit-card" id="cartModalOpen"></i>
+                </div>
+            </div>
+        </div>
+        <div class="card-bg">
+            <div class="food-container">
+                <div class="food-img-container">
+                    <img src="img/hamburger1.jpg" alt="food" class="img-cart">
+                </div>
+                <div class="food-info">
+                    <span id="product-name">Hamburger</span>
+                    <span id="product-desc">Lorem ipsum dolor sit amet</span>
+                    <span id="product-price">20$</span>
+                </div>
+                <div class="food-img-container">
+                    <img src="img/hamburger1.jpg" alt="food" class="img-cart">
+                </div>
+            </div>
+            <div class="food-container">
+                <div class="food-img-container">
+                    <img src="img/hamburger1.jpg" alt="food" class="img-cart">
+                </div>
+                <div class="food-info">
+                    <span id="product-name">Arepa</span>
+                    <span id="product-desc">Lorem ipsum dolor sit amet</span>
+                    <span id="product-price">20$</span>
+                </div>
+                <div class="food-img-container">
+                    <img src="img/hamburger1.jpg" alt="food" class="img-cart">
+                </div>
+            </div>
+            <div class="food-container">
+                <div class="food-img-container">
+                    <img src="img/hamburger1.jpg" alt="food" class="img-cart">
+                </div>
+                <div class="food-info">
+                    <span id="product-name">Pollo Frito</span>
+                    <span id="product-desc">Lorem ipsum dolor sit amet</span>
+                    <span id="product-price">20$</span>
+                </div>
+                <div class="food-img-container">
+                    <img src="img/hamburger1.jpg" alt="food" class="img-cart">
+                </div>
+            </div>
+            <div class="food-container">
+                <div class="food-img-container">
+                    <img src="img/hamburger1.jpg" alt="food" class="img-cart">
+                </div>
+                <div class="food-info">
+                    <span id="product-name">Hot Dog</span>
+                    <span id="product-desc">Lorem ipsum dolor sit amet</span>
+                    <span id="product-price">20$</span>
+                </div>
+                <div class="food-img-container">
+                    <img src="img/hamburger1.jpg" alt="food" class="img-cart">
+                </div>
+            </div>
+            <div class="food-container">
+                <div class="food-img-container">
+                    <img src="img/hamburger1.jpg" alt="food" class="img-cart">
+                </div>
+                <div class="food-info">
+                    <span id="product-name">Caraota</span>
+                    <span id="product-desc">Lorem ipsum dolor sit amet</span>
+                    <span id="product-price">20$</span>
+                </div>
+                <div class="food-img-container">
+                    <img src="img/hamburger1.jpg" alt="food" class="img-cart">
+                </div>
+            </div>
+            <div class="food-container">
+                <div class="food-img-container">
+                    <img src="img/hamburger1.jpg" alt="food" class="img-cart">
+                </div>
+                <div class="food-info">
+                    <span id="product-name">Espinaca</span>
+                    <span id="product-desc">Lorem ipsum dolor sit amet</span>
+                    <span id="product-price">20$</span>
+                </div>
+                <div class="food-img-container">
+                    <img src="img/hamburger1.jpg" alt="food" class="img-cart">
+                </div>
+            </div>
+    </div>
+    <div id="ventanaModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Confirmación</h2>
+            <p>¿Desea Procesar el Pago?</p>
+            <div class="modal-buttons-space">
+                <button>Aceptar</button>
+                <button>Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/cartModal.js"></script>
+</body>
+</html>
